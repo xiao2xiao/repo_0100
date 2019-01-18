@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hello-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/house-v1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/house-v1/src/main/resources/application.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ribbon-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trace-1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trace-2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trace-3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin-server" charset="UTF-8" />
+  </component>
+</project>

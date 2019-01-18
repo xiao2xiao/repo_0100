@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="eureka-server" />
+        <module name="hello-service" />
+        <module name="ribbon-consumer" />
+        <module name="trace-1" />
+        <module name="trace-2" />
+        <module name="trace-3" />
+        <module name="zipkin-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="demo1" target="1.7" />
+      <module name="demo2" target="1.8" />
+      <module name="house-v1" target="1.8" />
+      <module name="test_0100" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
