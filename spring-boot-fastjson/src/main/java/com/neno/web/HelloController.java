@@ -37,7 +37,9 @@ public class HelloController {
         String text_area_old = request.getParameter("text_area_old");
         logger.info("------------" + text_area_old);
         if (!"".equals(text_area_old)) {
-            modelMap.put("text_area_new", helloService.handleStr(text_area_old));
+            String str = helloService.handleStr(text_area_old);
+            logger.info("str = " + str);
+            modelMap.put("text_area_new", str);
         } else {
             modelMap.put("text_area_new", "");
         }

@@ -1,5 +1,7 @@
 package com.neno.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,6 +10,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class HelloService {
+    private Logger logger = LoggerFactory.getLogger(HelloService.class);
+
     /**
      * 处理逻辑
      */
@@ -18,6 +22,44 @@ public class HelloService {
             ss.append(str[i]).append(" ");
         }
         ss.append(str[str.length - 1]);
-        return new String(ss);
+        String string = new String(ss);
+        logger.info("+++++++++++" + handleSpace(string));
+        return handleSpace(string);
     }
+
+    /**
+     * 处理连续相同的空格
+     *
+     * @param original
+     * @return sb
+     */
+
+    public String handleSpace(String original) {
+        StringBuilder sb = new StringBuilder();
+        /**
+         * 标记是否是第一个空格
+         */
+        boolean isFirstSpace = false;
+
+//        original = original.trim();//如果考虑开头和结尾有空格的情形
+
+        char c;
+        for (int i = 0; i < original.length(); i++) {
+            c = original.charAt(i);
+            /**
+             * 遇到空格字符时,先判断是不是第一个空格字符
+             */
+            if (c == ' ' || c == '\t') {
+                if (!isFirstSpace) {
+                    sb.append(c);
+                    isFirstSpace = true;
+                }
+            } else {//遇到非空格字符时
+                sb.append(c);
+                isFirstSpace = false;
+            }
+        }
+        return sb.toString();
+    }
+
 }
