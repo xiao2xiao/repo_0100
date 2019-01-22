@@ -1,0 +1,25 @@
+server:
+  port: 8901
+spring:
+  application:
+    name: api-gateway
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+#zuul:
+#  routes:
+#    api-a:
+#      path: /api-a/**
+#      serviceId: hello-service
+#    api-b:
+#      path: /api-b/**
+#      serviceId: ribbon-consumer
+logbook:
+  write:
+    level: info
+  format:
+    style: http
+hello:
+  service:
+    name: hello-service
