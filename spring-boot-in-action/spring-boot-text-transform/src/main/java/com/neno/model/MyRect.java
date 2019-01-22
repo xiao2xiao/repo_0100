@@ -5,10 +5,19 @@ package com.neno.model;
  * @Date: 2019/1/22 11:11
  */
 public class MyRect {
-
+    /**
+     * 左上
+     * 该坐标是相对于电脑的
+     */
     private int x;
     private int y;
+    /**
+     * 矩形的宽度
+     */
     private int width;
+    /**
+     * 矩形的高度
+     */
     private int height;
 
     public MyRect() {

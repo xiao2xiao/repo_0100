@@ -5,7 +5,9 @@ package com.neno.model;
  * @Date: 2019/1/22 10:52
  */
 public class MyPoint {
-
+    /**
+     * 该坐标是相对于电脑的
+     */
     private double x;
 
     private double y;

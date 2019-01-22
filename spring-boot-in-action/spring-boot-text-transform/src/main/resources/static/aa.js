@@ -32,10 +32,12 @@ $(function () {
         ctx.beginPath();
         ctx.moveTo(0, height);
         ctx.lineTo(width, height);
+        //绘制箭头
         ctx.lineTo(width - 10, height - 10);
 
         ctx.lineJoin = 'round'; //线的连接处采用圆角
-        ctx.lineWidth = 5;
+        //线条宽度
+        ctx.lineWidth = 1;
         ctx.strokeStyle = '#0a0';
         ctx.stroke();
 
@@ -46,7 +48,7 @@ $(function () {
         ctx.lineTo(0, 0);
         ctx.lineTo(10, 10);
 
-        ctx.lineWidth = 5;
+        ctx.lineWidth = 1;
         ctx.strokeStyle = '#00f';
         ctx.stroke();
     }
@@ -71,6 +73,8 @@ $(function () {
             }
             ctx.lineTo(item.x, height - item.y);
         });
+        //线条宽度
+        ctx.lineWidth = 1;
         ctx.strokeStyle = "#FF0000";
         ctx.stroke();
     }
