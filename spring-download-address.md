@@ -1,0 +1,1 @@
+http://repo.spring.io/release/org/springframework/spring/
