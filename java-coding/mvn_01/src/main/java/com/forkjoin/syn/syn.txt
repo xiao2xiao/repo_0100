@@ -1,0 +1,6 @@
+
+Fork/Join与ExecutorService的主要区别在于工作窃取算法（work-stealing algorithm）。
+Fork/Join是实现了工作窃取算法的一种特殊的ExecutorService。 不同于Executor 框架，当一个任
+务等待它通过fork操作创建的子任务完成时，执行该任务的线程（称为工作线程）会寻找其他还为被执行的任务，并且
+开始执行这些任务。也就是等在自己的子任务完成时，还可以执行其他任务。 通过这种方式，线程充分利用运行时间，因
+而改善了应用的整体性能。
