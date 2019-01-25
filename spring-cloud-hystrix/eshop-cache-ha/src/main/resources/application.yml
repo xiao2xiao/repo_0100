@@ -1,0 +1,11 @@
+server:
+  port: 9091 
+spring:  application:    name: eshop-cache-ha
+
+eureka:
+  client:
+    service-url: 
+     defaultZone: http://localhost:2222/eureka/
+management:  endpoints:    web:
+      exposure:
+        include: "*"  endpoint:    health:      show-details: always
