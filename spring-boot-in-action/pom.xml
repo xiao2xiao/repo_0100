@@ -14,6 +14,8 @@
     <module>spring-boot-war-test</module>
     <module>spring-boot-fast-json</module>
     <module>spring-boot-text-transform</module>
+	<module>spring-boot-spring-session</module>
+    <module>spring-boot-read-write</module>
   </modules>
 
 
