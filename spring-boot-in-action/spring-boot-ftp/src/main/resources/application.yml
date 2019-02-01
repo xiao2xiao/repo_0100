@@ -1,0 +1,8 @@
+#ftp相关配置
+FTP_ADDRESS: 192.168.254.134
+FTP_PORT: 21
+FTP_USERNAME: ftpuser
+FTP_PASSWORD: feifei123321!
+FTP_BASEPATH: /opt/pic/ftpuser
+#图片服务器相关配置
+IMAGE_BASE_URL: http://192.168.254.134:9999/images/ftpuser

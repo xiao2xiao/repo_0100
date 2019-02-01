@@ -16,6 +16,7 @@
     <module>spring-boot-text-transform</module>
 	<module>spring-boot-spring-session</module>
     <module>spring-boot-read-write</module>
+	<module>spring-boot-ftp</module>
   </modules>
 
 
