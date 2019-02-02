@@ -9,6 +9,7 @@
         <module name="spring-boot-fast-json" />
         <module name="spring-boot-ftp" />
         <module name="spring-boot-read-write" />
+        <module name="spring-boot-sharding-druid-mybatis" />
         <module name="spring-boot-spring-session" />
         <module name="spring-boot-text-transform" />
         <module name="spring-boot-war-test" />

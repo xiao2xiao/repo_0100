@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neno.mapper.UserInfoMapper">
+
+    <select id="selectUserInfos" resultType="UserInfo">
+     select * from userinfo
+   </select>
+    <select id="queryUserById" parameterType="int" resultType="UserInfo">
+     select * from userinfo where id = #{id}
+   </select>
+    <insert id="insertUserInfo">
+    insert into userinfo (name) values (#{name})
+   </insert>
+
+    <update id="updateUserInfo">
+        update userinfo set name = #{name}
+        where id = #{id}
+    </update>
+
+</mapper>

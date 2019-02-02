@@ -1,0 +1,38 @@
+server:
+  port: 9090
+
+sharding.jdbc:
+  data-sources:
+    ds_master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://192.168.254.135:3306/db_rw?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: feifei123321!
+    ds_slave_0:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://192.168.254.136:3306/db_rw?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: feifei123321!
+  master-slave-rule:
+    name: ds_ms
+    master-data-source-name: ds_master
+    slave-data-source-names: ds_slave_0
+    #load-balance-algorithm-type: round_robin
+
+#dataSources:
+#  db_master: !!com.zaxxer.hikari.HikariDataSource
+#    driverClassName: com.mysql.cj.jdbc.Driver
+#    jdbcUrl: jdbc:mysql://192.168.254.135:3306/db_rw?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: feifei123321!
+#  db_slave: !!com.zaxxer.hikari.HikariDataSource
+#    driverClassName: com.mysql.cj.jdbc.Driver
+#    jdbcUrl: jdbc:mysql://192.168.254.136:3306/db_rw?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: feifei123321!
+#masterSlaveRule:
+#  name: db_ms
+#  masterDataSourceName: db_master
+mybatis:
+  config-location: classpath:/mybatis/mybatis-config.xml
+#  slaveDataSourceNames: [db_slave]
