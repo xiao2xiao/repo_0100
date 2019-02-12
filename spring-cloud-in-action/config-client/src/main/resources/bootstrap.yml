@@ -1,0 +1,48 @@
+#server:
+#  port: 7002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+spring:
+  application:
+    name: didispace
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      profile: test
+#      username: user
+#      password: 95c48769-7954-4153-9fcb-ce6c2eadb099
+      fail-fast: true
+      #获取失败之后重试
+      retry:
+        initial-interval: 1000
+        #倍率
+        multiplier: 1.1
+        max-interval: 2000
+        max-attempts: 6
+  rabbitmq:
+    password: guest
+    username: guest
+    host: 127.0.0.1
+    port: 5672
+#  cloud:
+#    config:
+#      profile: dev
+#      label: master
+#      uri: http://localhost:7001/
+#      username: user
+#      password: 95c48769-7954-4153-9fcb-ce6c2eadb099
+management:
+#  server:
+#    port: 7000
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

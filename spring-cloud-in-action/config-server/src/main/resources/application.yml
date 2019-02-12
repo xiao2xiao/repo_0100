@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: config-server
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    config:
+      server:
+        git:
+          #uri也可以是本地仓库地址
+          uri: https://gitee.com/xiao2xiao/demo_0100
+          search-paths: spring_cloud_book/config_repo
+          username: 976822314@qq.com
+          password: xiaoxiao123321@q
+          #存储从git上获取的信息
+          basedir: E:\spring-cloud-config\config-temp
+#  security:
+#    user:
+#      name: user
+#      password: 95c48769-7954-4153-9fcb-ce6c2eadb099
+server:
+  port: 7001
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /actuator

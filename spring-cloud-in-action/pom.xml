@@ -20,5 +20,8 @@
         <module>trace-3</module>
         <module>zipkin-server</module>
         <module>api-gateway</module>
+		<module>config-server</module>
+        <module>config-client</module>
+        <module>rabbitmq-hello</module>
     </modules>
 </project>
