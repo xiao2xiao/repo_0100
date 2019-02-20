@@ -32,6 +32,7 @@
 
 #从库
 	#/etc/my.cnf
+	
 	server-id=2
 	relay-log-index=slave-relay-bin.index
 	relay-log=slave-relay-bin
