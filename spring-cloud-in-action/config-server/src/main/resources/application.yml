@@ -14,7 +14,7 @@ spring:
           uri: https://gitee.com/xiao2xiao/demo_0100
           search-paths: spring_cloud_book/config_repo
           username: 976822314@qq.com
-          password: xiaoxiao123321@q
+          password: ##############
           #存储从git上获取的信息
           basedir: E:\spring-cloud-config\config-temp
 #  security:
