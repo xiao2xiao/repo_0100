@@ -1,5 +1,7 @@
 #主库
+
 	#/etc/my.cnf
+	
 	#设置mysql的id
 	server-id=1
 
@@ -31,6 +33,7 @@
 	flush privileges;
 
 #从库
+
 	#/etc/my.cnf
 	
 	server-id=2
