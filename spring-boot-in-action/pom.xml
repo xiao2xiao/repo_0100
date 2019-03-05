@@ -19,6 +19,7 @@
         <module>spring-boot-read-write</module>
         <module>spring-boot-ftp</module>
         <module>spring-boot-sharding-druid-mybatis</module>
+        <module>spring-boot-redis</module>
     </modules>
 
 

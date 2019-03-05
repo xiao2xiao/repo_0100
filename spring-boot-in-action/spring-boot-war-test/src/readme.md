@@ -31,6 +31,16 @@
             <scope>provided</scope>
         </dependency>
     
+         <!--spring boot 没有web.xml文件，该插件是忽略掉web.xml文件-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.2.2</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
+    
 ## 4）该项目的端口一定要和tomcat一致
     
     

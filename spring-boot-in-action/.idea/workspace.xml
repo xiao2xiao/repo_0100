@@ -11,6 +11,7 @@
     <ignored path="$PROJECT_DIR$/spring-boot-read-write/target/" />
     <ignored path="$PROJECT_DIR$/spring-boot-ftp/target/" />
     <ignored path="$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-redis/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +22,13 @@
     <session id="1382419584">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="28" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="1" />
@@ -34,69 +39,129 @@
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.49" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.open.time.73" value="1" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="3" />
+          <entry key="class" value="7" />
           <entry key="ftl" value="5" />
-          <entry key="java" value="84" />
+          <entry key="java" value="127" />
           <entry key="js" value="9" />
           <entry key="md" value="2" />
           <entry key="pom" value="4" />
           <entry key="txt" value="2" />
-          <entry key="xml" value="35" />
-          <entry key="yml" value="18" />
+          <entry key="xml" value="51" />
+          <entry key="yml" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
+          <entry key="CLASS" value="7" />
           <entry key="FTL" value="5" />
-          <entry key="JAVA" value="84" />
+          <entry key="JAVA" value="127" />
           <entry key="JavaScript" value="9" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="39" />
-          <entry key="YAML" value="18" />
+          <entry key="XML" value="55" />
+          <entry key="YAML" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="49" />
           <entry key="ftl" value="300" />
-          <entry key="java" value="5233" />
+          <entry key="java" value="6571" />
           <entry key="js" value="773" />
           <entry key="md" value="3" />
-          <entry key="xml" value="413" />
-          <entry key="yml" value="269" />
+          <entry key="xml" value="461" />
+          <entry key="yml" value="342" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="FTL" value="299" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="5233" />
+          <entry key="JAVA" value="6571" />
           <entry key="JavaScript" value="773" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="49" />
-          <entry key="XML" value="413" />
-          <entry key="YAML" value="269" />
+          <entry key="XML" value="461" />
+          <entry key="YAML" value="342" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-redis/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/RedisApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/test/java/com/neno/service/UserServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="32" column="42" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/controller/UserInfoController.java">
+        <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/service/CommandService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="45" />
+            <state relative-caret-position="360">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,52 +170,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/ShardingDruidMybatisApplication.java">
+        <entry file="jar://E:/mvnrepository/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE-sources.jar!/org/springframework/core/annotation/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="498">
+              <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/resources/mybatis/mybatis-config.xml">
+        <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/common/CommonConstant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/resources/mapper/userinfo.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/serivce/UserInfoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -160,6 +192,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -173,23 +206,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-fast-json/src/main/java/com/neno/config/WebConfiguration.java" />
-        <option value="$PROJECT_DIR$/spring-boot-text-transform/src/main/java/com/neno/web/HelloController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-text-transform/src/main/java/com/neno/service/PonitService.java" />
-        <option value="$PROJECT_DIR$/spring-boot-text-transform/src/main/resources/templates/show.ftl" />
-        <option value="$PROJECT_DIR$/spring-boot-text-transform/src/main/java/com/neno/web/ShowController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-text-transform/src/main/java/com/neno/model/MyPoint.java" />
-        <option value="$PROJECT_DIR$/spring-boot-text-transform/src/main/java/com/neno/model/MyRect.java" />
-        <option value="$PROJECT_DIR$/spring-boot-text-transform/src/main/java/com/neno/service/TestFile.java" />
-        <option value="$PROJECT_DIR$/spring-boot-text-transform/src/main/resources/static/aa.js" />
-        <option value="$PROJECT_DIR$/spring-boot-text-transform/src/main/java/com/neno/service/PointService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-spring-session/src/test/java/com/neno/SpringSessionApplicationTests.java" />
         <option value="$PROJECT_DIR$/spring-boot-war-test/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-war-test/src/readme.md" />
         <option value="$PROJECT_DIR$/spring-boot-spring-session/src/main/java/com/neno/SpringSessionApplication.java" />
         <option value="$PROJECT_DIR$/spring-boot-spring-session/src/main/java/com/neno/web/HelloController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-spring-session/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-spring-session/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spring-boot-read-write/src/test/java/com/neno/ReadWriteApplicationTests.java" />
         <option value="$PROJECT_DIR$/spring-boot-read-write/pom.xml" />
@@ -224,6 +244,19 @@
         <option value="$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/serivce/UserInfoService.java" />
         <option value="$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/controller/UserInfoController.java" />
         <option value="$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-spring-session/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/RedisApplication.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/test/java/com/neno/RedisApplicationTests.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/model/User.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/mapper.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/service/ThreadTest.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/common/CommonConstant.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/service/UserService.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/test/java/com/neno/service/UserServiceTest.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/UserController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/service/CommandService.java" />
       </list>
     </option>
   </component>
@@ -316,7 +349,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,70 +359,25 @@
             <path>
               <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-read-write" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-read-write" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-read-write" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-read-write" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-read-write" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="neno" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-read-write" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="neno" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -398,7 +385,7 @@
             <path>
               <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -407,47 +394,17 @@
             <path>
               <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="neno" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="neno" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="neno" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="neno" type="462c0819:PsiDirectoryNode" />
-              <item name="serivce" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -455,31 +412,48 @@
             <path>
               <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sharding-druid-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-spring-session" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="neno" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="neno" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-in-action" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-in-action" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-war-test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -489,8 +463,10 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549101206949" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551754592853" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../house" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -500,16 +476,22 @@
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.neno.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.neno.model" />
+      <recent name="com.neno.controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\002---AllCode\IdeaProjects\spring-boot-in-action\spring-boot-sharding-druid-mybatis\src\main\sql" />
       <recent name="D:\002---AllCode\IdeaProjects\spring-boot-in-action\spring-boot-sharding-druid-mybatis\src\main\resources\mapper" />
       <recent name="D:\002---AllCode\IdeaProjects\spring-boot-in-action\spring-boot-sharding-druid-mybatis\src\main\resources\mybatis" />
       <recent name="D:\002---AllCode\IdeaProjects\spring-boot-in-action\spring-boot-read-write\src\main\sql" />
       <recent name="D:\002---AllCode\IdeaProjects\spring-boot-in-action\spring-boot-text-transform\src\main\txt" />
-      <recent name="D:\002---AllCode\IdeaProjects\spring-boot-in-action\spring-boot-text-transform\src\main\resources\templates" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.neno.controller" />
-      <recent name="com.neno.model" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\002---AllCode\IdeaProjects\spring-boot-in-action\spring-boot-text-transform\src\main\resources\txt" />
@@ -527,23 +509,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ShardingDruidMybatisApplication">
-    <configuration name="ReadWriteApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.neno.ReadWriteApplication" />
-      <module name="spring-boot-read-write" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.neno.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.neno.service.TestFile" />
-      <module name="spring-boot-text-transform" />
+  <component name="RunManager" selected="JUnit.UserServiceTest.consumerDelayMessage">
+    <configuration name="ThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neno.service.ThreadTest" />
+      <module name="spring-boot-redis" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.neno.service.*" />
@@ -554,17 +523,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FtpTest.testUploadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-boot-ftp" />
+    <configuration name="UserServiceTest.consumerDelayMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-redis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neno.utils.*" />
+          <option name="PATTERN" value="com.neno.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.neno.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.neno.utils.FtpTest" />
-      <option name="METHOD_NAME" value="testUploadFile" />
+      <option name="PACKAGE_NAME" value="com.neno.service" />
+      <option name="MAIN_CLASS_NAME" value="com.neno.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="consumerDelayMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.productionDelayMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neno.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.neno.service" />
+      <option name="MAIN_CLASS_NAME" value="com.neno.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="productionDelayMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neno.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.neno.service" />
+      <option name="MAIN_CLASS_NAME" value="com.neno.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neno.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.neno.service" />
+      <option name="MAIN_CLASS_NAME" value="com.neno.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="testA" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -591,6 +608,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.neno.RedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShardingDruidMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-sharding-druid-mybatis" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.neno.ShardingDruidMybatisApplication" />
@@ -601,19 +625,6 @@
     <configuration name="SpringSessionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-spring-session" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.neno.SpringSessionApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextTransformApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="spring-boot-text-transform" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.neno.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.neno.TextTransformApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -631,18 +642,21 @@
       <item itemvalue="Spring Boot.SpringSessionApplication" />
       <item itemvalue="Spring Boot.ReadWriteApplication" />
       <item itemvalue="Spring Boot.FtpApplication" />
-      <item itemvalue="Spring Boot.TextTransformApplication" />
-      <item itemvalue="Application.TestFile" />
-      <item itemvalue="Application.ReadWriteApplication" />
-      <item itemvalue="JUnit.FtpTest.testUploadFile" />
       <item itemvalue="Spring Boot.ShardingDruidMybatisApplication" />
+      <item itemvalue="Spring Boot.RedisApplication" />
+      <item itemvalue="JUnit.UserServiceTest.productionDelayMessage" />
+      <item itemvalue="JUnit.UserServiceTest.consumerDelayMessage" />
+      <item itemvalue="Application.ThreadTest" />
+      <item itemvalue="JUnit.UserServiceTest.test" />
+      <item itemvalue="JUnit.UserServiceTest.testA" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FtpTest.testUploadFile" />
-        <item itemvalue="Application.ReadWriteApplication" />
-        <item itemvalue="Spring Boot.TextTransformApplication" />
-        <item itemvalue="Application.TestFile" />
+        <item itemvalue="JUnit.UserServiceTest.consumerDelayMessage" />
+        <item itemvalue="JUnit.UserServiceTest.productionDelayMessage" />
+        <item itemvalue="JUnit.UserServiceTest.testA" />
+        <item itemvalue="JUnit.UserServiceTest.test" />
+        <item itemvalue="Application.ThreadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -676,29 +690,68 @@
       <workItem from="1548914372678" duration="118000" />
       <workItem from="1548922535784" duration="853000" />
       <workItem from="1549018792772" duration="4769000" />
-      <workItem from="1549087525173" duration="10091000" />
+      <workItem from="1549087525173" duration="10458000" />
+      <workItem from="1549932645447" duration="513000" />
+      <workItem from="1550115629715" duration="1963000" />
+      <workItem from="1550118615329" duration="4983000" />
+      <workItem from="1550125299737" duration="1412000" />
+      <workItem from="1550204551399" duration="15000" />
+      <workItem from="1550388688143" duration="1755000" />
+      <workItem from="1550571172797" duration="4036000" />
+      <workItem from="1550796556583" duration="434000" />
+      <workItem from="1551672374148" duration="4224000" />
+      <workItem from="1551676800282" duration="641000" />
+      <workItem from="1551695885872" duration="113000" />
+      <workItem from="1551749830599" duration="3946000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FtpTest_testUploadFile - 2019.02.01 at 19h 31m 19s.xml">
-      <configuration name="FtpTest.testUploadFile" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_productionDelayMessage - 2019.03.04 at 13h 09m 55s.xml">
+      <configuration name="UserServiceTest.productionDelayMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FtpTest_testUploadFile - 2019.02.01 at 19h 42m 57s.xml">
-      <configuration name="FtpTest.testUploadFile" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_consumerDelayMessage - 2019.03.04 at 13h 10m 58s.xml">
+      <configuration name="UserServiceTest.consumerDelayMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FtpTest_testUploadFile - 2019.02.01 at 20h 07m 54s.xml">
-      <configuration name="FtpTest.testUploadFile" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_productionDelayMessage - 2019.03.04 at 13h 12m 53s.xml">
+      <configuration name="UserServiceTest.productionDelayMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FtpTest_testUploadFile - 2019.02.01 at 20h 13m 36s.xml">
-      <configuration name="FtpTest.testUploadFile" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_consumerDelayMessage - 2019.03.04 at 13h 14m 45s.xml">
+      <configuration name="UserServiceTest.consumerDelayMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_consumerDelayMessage - 2019.03.04 at 13h 21m 48s.xml">
+      <configuration name="UserServiceTest.consumerDelayMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_productionDelayMessage - 2019.03.04 at 13h 22m 12s.xml">
+      <configuration name="UserServiceTest.productionDelayMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_consumerDelayMessage - 2019.03.04 at 13h 23m 18s.xml">
+      <configuration name="UserServiceTest.consumerDelayMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_consumerDelayMessage - 2019.03.04 at 13h 24m 03s.xml">
+      <configuration name="UserServiceTest.consumerDelayMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_productionDelayMessage - 2019.03.04 at 13h 26m 42s.xml">
+      <configuration name="UserServiceTest.productionDelayMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_consumerDelayMessage - 2019.03.04 at 13h 28m 11s.xml">
+      <configuration name="UserServiceTest.consumerDelayMessage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74830000" />
+    <option name="totallyTimeSpent" value="99232000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -707,22 +760,22 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.23793566" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.20442359" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.4427157" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="2" weight="0.32956153" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.6308345" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.12747875" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.32956153" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" weight="0.38613862" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.17397454" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.09915014" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.21074964" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.32956153" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.2707775" />
       <window_info anchor="right" id="Database" order="2" />
@@ -776,149 +829,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/mvnrepository/org/springframework/boot/spring-boot-starter-data-redis/2.1.1.RELEASE/spring-boot-starter-data-redis-2.1.1.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://E:/mvnrepository/org/springframework/boot/spring-boot-test/2.1.1.RELEASE/spring-boot-test-2.1.1.RELEASE-sources.jar!/org/springframework/boot/test/context/SpringBootTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="76" column="48" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-fast-json/src/test/java/com/neno/FastJsonApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-fast-json/src/main/java/com/neno/web/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-spring-session/src/test/java/com/neno/SpringSessionApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/mvnrepository/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-war-test/src/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="271">
-            <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-war-test/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-war-test/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="101" column="21" lean-forward="true" selection-start-line="93" selection-start-column="11" selection-end-line="101" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-war-test/src/main/java/com/neno/WarTestApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-war-test/src/main/java/com/neno/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-spring-session/src/main/java/com/neno/web/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-spring-session/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-read-write/src/test/java/com/neno/ReadWriteApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/mvnrepository/org/springframework/data/spring-data-jpa/2.1.3.RELEASE/spring-data-jpa-2.1.3.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/mvnrepository/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar!/org/springframework/data/repository/query/QueryByExampleExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-read-write/src/main/java/com/neno/model/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-read-write/src/main/java/com/neno/ReadWriteApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-spring-session/src/main/java/com/neno/SpringSessionApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-fast-json/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="62" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-ftp/src/test/java/com/neno/FtpApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -936,24 +850,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-ftp/src/main/java/com/neno/utils/UploadUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
           <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-ftp/src/main/java/com/neno/utils/FtpFileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="38" column="51" lean-forward="true" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -971,20 +871,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-ftp/src/test/java/com/neno/utils/FtpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/test/java/com/neno/ShardingDruidMybatisApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,13 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="76" column="13" selection-start-line="14" selection-start-column="4" selection-end-line="86" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-spring-session/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1012,13 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-read-write/src/main/java/com/neno/controller/UserInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-read-write/src/main/resources/sharding-jdbc.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1026,161 +902,262 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/pom.xml">
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/common/ResultMsg.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/dto/UserInfoDto.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-ftp/src/test/java/com/neno/FtpApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="234">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/config/ShardingMasterSlaveConfig.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-ftp/src/test/java/com/neno/utils/FtpTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="305">
+          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-ftp/src/main/java/com/neno/utils/FtpFileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/common/CommonConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/common/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mvnrepository/io/shardingjdbc/sharding-jdbc-core/2.0.3/sharding-jdbc-core-2.0.3.jar!/io/shardingjdbc/core/api/config/MasterSlaveRuleConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/config/ShardingDataSourceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="342">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/mapper/UserInfoMapper.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/resources/mybatis/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="288">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/serivce/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/model/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/common/ResultMsg.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/mapper/UserInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/dto/UserInfoDto.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/config/ShardingMasterSlaveConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="306">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/common/CommonConstant.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-read-write/src/main/java/com/neno/controller/UserInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="492">
+          <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/common/Result.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-read-write/src/main/java/com/neno/ReadWriteApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
-          <folding>
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/resources/mapper/userinfo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/serivce/UserInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/ShardingDruidMybatisApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/resources/mybatis/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="216">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/controller/UserInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="45" />
+        <state relative-caret-position="306">
+          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/java/com/neno/ShardingDruidMybatisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-spring-session/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="93" column="10" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="93" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/test/java/com/neno/RedisApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-fast-json/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="10" column="62" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/mapper.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding-druid-mybatis/src/main/resources/mapper/userinfo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mvnrepository/org/springframework/data/spring-data-redis/2.1.3.RELEASE/spring-data-redis-2.1.3.RELEASE.jar!/org/springframework/data/redis/core/HashOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/service/ThreadTest.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/common/CommonConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/test/java/com/neno/service/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/RedisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/app2/java/jdk/src.zip!/java/lang/Comparable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mvnrepository/org/springframework/data/spring-data-redis/2.1.3.RELEASE/spring-data-redis-2.1.3.RELEASE.jar!/org/springframework/data/redis/core/ZSetOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mvnrepository/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE-sources.jar!/org/springframework/core/annotation/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/neno/service/CommandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1252,7 +1229,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spring-boot-sharding-druid-mybatis</last-edited>
+          <last-edited>spring-boot-redis</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

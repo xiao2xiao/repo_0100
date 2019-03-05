@@ -1,0 +1,11 @@
+server:
+  port: 8999
+spring:
+  redis:
+    port: 6379
+    host: 192.168.254.134
+  application:
+    name: spring-boot-redis
+  output:
+    ansi:
+      enabled: always
