@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: eshop-cache-ha
+  output:
+    ansi:
+      enabled: always
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
