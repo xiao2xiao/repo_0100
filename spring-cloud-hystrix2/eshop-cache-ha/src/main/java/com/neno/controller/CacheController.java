@@ -3,6 +3,7 @@ package com.neno.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.neno.hystrix.command.GetProductInfoCommand;
 import com.neno.hystrix.command.GetProductInfosCommand;
+import com.neno.hystrix.command.GetShopNameCommand;
 import com.neno.model.ProductInfo;
 import com.neno.service.ProductService;
 import com.netflix.hystrix.HystrixCommand;
@@ -50,8 +51,13 @@ public class CacheController {
     @RequestMapping("/getProductInfo")
     @ResponseBody
     public String getProductInfo(Long productId) {
-        HystrixCommand<ProductInfo> hystrixCommand = new GetProductInfoCommand(productId, restTemplate);
-        ProductInfo productInfo = hystrixCommand.execute();
+        HystrixCommand<ProductInfo> productInfoHystrixCommand = new GetProductInfoCommand(productId, restTemplate);
+        ProductInfo productInfo = productInfoHystrixCommand.execute();
+
+        Long shopId = productInfo.getShopId();
+        HystrixCommand<String> shopNameHystrixCommand = new GetShopNameCommand(shopId);
+        String shopName = shopNameHystrixCommand.execute();
+        productInfo.setShopName(shopName);
         LOGGER.info(productInfo.toString());
         return "success";
     }

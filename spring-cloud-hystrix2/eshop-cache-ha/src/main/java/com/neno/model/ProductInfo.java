@@ -13,11 +13,21 @@ public class ProductInfo {
     private String specification;
     private Date modifiedTime;
     private long shopId;
+    private String shopName;
+
+    public String getShopName() {
+        return shopName;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
+    }
+
 
     public ProductInfo() {
     }
 
-    public ProductInfo(long id, String name, double price, String specification, Date modifiedTime, long shopId) {
+    public ProductInfo(long id, String name, double price, String specification, Date modifiedTime, long shopId, String shopName) {
         super();
         this.id = id;
         this.name = name;
@@ -25,6 +35,7 @@ public class ProductInfo {
         this.specification = specification;
         this.modifiedTime = modifiedTime;
         this.shopId = shopId;
+        this.shopName = shopName;
     }
 
     public long getId() {
@@ -77,7 +88,14 @@ public class ProductInfo {
 
     @Override
     public String toString() {
-        return "ProductInfo [id=" + id + ", name=" + name + ", price=" + price + ", specification=" + specification
-                + ", modifiedTime=" + modifiedTime + ", shopId=" + shopId + "]";
+        return "ProductInfo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", specification='" + specification + '\'' +
+                ", modifiedTime=" + modifiedTime +
+                ", shopId=" + shopId +
+                ", shopName='" + shopName + '\'' +
+                '}';
     }
 }
