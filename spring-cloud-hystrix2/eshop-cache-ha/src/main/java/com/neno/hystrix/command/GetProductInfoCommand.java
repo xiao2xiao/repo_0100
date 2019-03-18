@@ -5,6 +5,8 @@ import com.neno.common.Commons;
 import com.neno.model.ProductInfo;
 import com.neno.service.ProductService;
 import com.netflix.hystrix.HystrixCommand;
+import com.netflix.hystrix.HystrixRequestCache;
+import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +25,7 @@ public class GetProductInfoCommand extends HystrixCommand<ProductInfo> {
     private RestTemplate restTemplate;
 
     public GetProductInfoCommand(Long productId, RestTemplate restTemplate) {
-        super(Setter.withGroupKey(Commons.hystrixGroupKey).andCommandKey(Commons.hystrixCommandKey));
+        super(Setter.withGroupKey(Commons.GetProductInfoGroupKey).andCommandKey(Commons.GetProductInfoCommandKey));
         this.productId = productId;
         this.restTemplate = restTemplate;
     }
@@ -34,5 +36,19 @@ public class GetProductInfoCommand extends HystrixCommand<ProductInfo> {
         ResponseEntity<String> responseEntity = restTemplate.getForEntity(url, String.class);
         LOGGER.info("调用接口ProductService，商品productId = " + productId);
         return JSONObject.parseObject(responseEntity.getBody(), ProductInfo.class);
+    }
+
+    @Override
+    protected String getCacheKey() {
+        return String.valueOf(productId);
+    }
+
+    /**
+     * 清空缓存
+     *
+     * @param productId
+     */
+    public static void flushCache(long productId) {
+        HystrixRequestCache.getInstance(Commons.GetProductInfoCommandKey, HystrixConcurrencyStrategyDefault.getInstance()).clear(String.valueOf(productId));
     }
 }

@@ -21,7 +21,7 @@ public class GetProductInfosCommand extends HystrixObservableCommand<ProductInfo
     private RestTemplate restTemplate;
 
     public GetProductInfosCommand(long[] productIds, RestTemplate restTemplate) {
-        super(Setter.withGroupKey(Commons.hystrixGroupKey).andCommandKey(Commons.hystrixCommandKey));
+        super(Setter.withGroupKey(Commons.GetProductInfoGroupKey).andCommandKey(Commons.GetProductInfoCommandKey));
         this.productIds = productIds;
         this.restTemplate = restTemplate;
     }

@@ -14,8 +14,8 @@ public class GetShopNameCommand extends HystrixCommand<String> {
     private Long shopId;
 
     public GetShopNameCommand(Long shopId) {
-        super(Setter.withGroupKey(Commons.hystrixGroupKey)
-                .andCommandKey(Commons.hystrixCommandKey)
+        super(Setter.withGroupKey(Commons.GetShopNameCommandGroupKey)
+                .andCommandKey(Commons.GetShopNameCommandKey)
                 .andCommandPropertiesDefaults(HystrixCommandProperties.Setter()
                         .withExecutionIsolationStrategy(HystrixCommandProperties
                                 .ExecutionIsolationStrategy.SEMAPHORE)));

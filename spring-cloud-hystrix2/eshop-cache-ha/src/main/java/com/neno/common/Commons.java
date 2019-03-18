@@ -8,7 +8,11 @@ import com.netflix.hystrix.HystrixCommandKey;
  * @Date: 2019/3/17 21:42
  */
 public interface Commons {
-    public static final HystrixCommandGroupKey hystrixGroupKey = HystrixCommandGroupKey.Factory
-            .asKey("GetProductInfoGroup");
-    public static final HystrixCommandKey hystrixCommandKey = HystrixCommandKey.Factory.asKey("GetProductInfoCommand");
+    HystrixCommandGroupKey GetProductInfoGroupKey = HystrixCommandGroupKey.Factory
+            .asKey("GetProductInfoCommandGroup");
+    HystrixCommandGroupKey GetShopNameCommandGroupKey = HystrixCommandGroupKey.Factory
+            .asKey("GetShopNameCommandGroup");
+    HystrixCommandKey GetProductInfoCommandKey = HystrixCommandKey.Factory.asKey("GetProductInfoCommand");
+    HystrixCommandKey GetShopNameCommandKey = HystrixCommandKey.Factory.asKey("GetShopNameCommand");
+
 }

@@ -90,4 +90,22 @@ public class CacheController {
         });
         return "success";
     }
+
+    /**
+     * 通过继承HystrixCommand<T>方法实现
+     * 通过走request cache实现
+     */
+    @RequestMapping("/getProductInfosFromCache")
+    @ResponseBody
+    public String getProductInfosFromCache(String productIds) {
+        long[] pp = Arrays.stream(productIds.split(",")).mapToLong(Long::valueOf).toArray();
+        HystrixCommand<ProductInfo> infoHystrixCommand = null;
+        for (Long productId : pp) {
+            infoHystrixCommand = new GetProductInfoCommand(productId, restTemplate);
+            ProductInfo productInfo = infoHystrixCommand.execute();
+            LOGGER.info(productInfo.toString());
+            LOGGER.info("是否从缓存中获取：" + infoHystrixCommand.isResponseFromCache());
+        }
+        return "success";
+    }
 }
