@@ -1,0 +1,17 @@
+server:
+  port: 3333
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  application:
+    name: hystrix-dashboard
+  output:
+    ansi:
+      enabled: always
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
