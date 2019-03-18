@@ -27,7 +27,7 @@ public class UpdateProductInfoCommand extends HystrixCommand<Boolean> {
 
     @Override
     protected Boolean run() throws Exception {
-        GetProductInfoCommand.flushCache(productId);
+//        GetProductInfoCommand.flushCache(productId);
         return true;
     }
 

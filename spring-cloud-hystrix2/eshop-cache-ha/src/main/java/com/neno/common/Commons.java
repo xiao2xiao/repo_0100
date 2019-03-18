@@ -12,7 +12,10 @@ public interface Commons {
             .asKey("GetProductInfoCommandGroup");
     HystrixCommandGroupKey GetShopNameCommandGroupKey = HystrixCommandGroupKey.Factory
             .asKey("GetShopNameCommandGroup");
+    HystrixCommandGroupKey GetBrandNameCommandGroupKey = HystrixCommandGroupKey.Factory
+            .asKey("GetBrandNameCommandGroup");
     HystrixCommandKey GetProductInfoCommandKey = HystrixCommandKey.Factory.asKey("GetProductInfoCommand");
     HystrixCommandKey GetShopNameCommandKey = HystrixCommandKey.Factory.asKey("GetShopNameCommand");
+    HystrixCommandKey GetBrandNameCommandKey = HystrixCommandKey.Factory.asKey("GetBrandNameCommand");
 
 }
