@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="debug">
+    <Properties>
+        <!-- 配置日志文件输出目录，此配置将日志输出到指定文件夹 -->
+        <Property name="LOG_HOME">D:/build/house/house-service/logs</Property>
+        <!-- 配置日志文件输出格式 -->
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%logger{50}:%L] [%X{X-B3-TraceId},%X{X-B3-SpanId}] - %msg%n</Property>
+    </Properties>
+    <appenders>
+        <!--这个输出控制台的配置-->
+        <Console name="STDOUT">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <!-- 输出日志的格式-->
+            <PatternLayout
+                    pattern="${LOG_PATTERN}"
+                    charset="GBK"/>
+        </Console>
+
+        <RollingRandomAccessFile name="FILE-INFO" fileName="${LOG_HOME}/house-info.log"
+                                 filePattern="${LOG_HOME}/house-info.%d{yyyy-MM-dd-HH}.log">
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout
+                    pattern="${LOG_PATTERN}"
+                    charset="UTF-8"/>
+            <TimeBasedTriggeringPolicy interval="1"/>
+            <DefaultRolloverStrategy max="1">
+                <Delete basePath="${LOG_HOME}" maxDepth="2">
+                    <IfFileName glob="*house-info.*.log"/>
+                    <IfLastModified age="1h"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+
+
+        <RollingRandomAccessFile name="FILE-DEBUG" fileName="${LOG_HOME}/house-debug.log"
+                                 filePattern="${LOG_HOME}/house-debug.%d{yyyy-MM-dd-HH}.log">
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout
+                    pattern="${LOG_PATTERN}"
+                    charset="UTF-8"/>
+            <TimeBasedTriggeringPolicy interval="1"/>
+            <DefaultRolloverStrategy max="1">
+                <Delete basePath="${LOG_HOME}" maxDepth="2">
+                    <IfFileName glob="*house-debug.*.log"/>
+                    <IfLastModified age="1h"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="FILE-WARN" fileName="${LOG_HOME}/house-warn.log"
+                                 filePattern="${LOG_HOME}/house-warn.%d{yyyy-MM-dd-HH}.log">
+            <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout
+                    pattern="${LOG_PATTERN}"
+                    charset="UTF-8"/>
+            <TimeBasedTriggeringPolicy interval="1"/>
+            <DefaultRolloverStrategy max="1">
+                <Delete basePath="${LOG_HOME}" maxDepth="2">
+                    <IfFileName glob="*house-warn.*.log"/>
+                    <IfLastModified age="1h"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="FILE-ERROR" fileName="${LOG_HOME}/house-error.log"
+                                 filePattern="${LOG_HOME}/house-error.%d{yyyy-MM-dd-HH}.log">
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout
+                    pattern="${LOG_PATTERN}"
+                    charset="UTF-8"/>
+            <TimeBasedTriggeringPolicy interval="1"/>
+            <DefaultRolloverStrategy max="1">
+                <Delete basePath="${LOG_HOME}" maxDepth="2">
+                    <IfFileName glob="*house-error.*.log"/>
+                    <IfLastModified age="1h"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+    </appenders>
+
+    <loggers>
+        <AsyncLogger name="springfox" level="OFF"></AsyncLogger>
+
+        <AsyncLogger level="DEBUG" name="com.house.house.mapper" additivity="false">
+            <appender-ref ref="FILE-DEBUG"/>
+            <appender-ref ref="STDOUT"/>
+        </AsyncLogger>
+
+        <AsyncRoot level="INFO" includeLocation="true">
+            <AppenderRef ref="FILE-INFO"/>
+            <AppenderRef ref="FILE-WARN"/>
+            <AppenderRef ref="FILE-ERROR"/>
+            <AppenderRef ref="STDOUT"/>
+        </AsyncRoot>
+    </loggers>
+</configuration>
