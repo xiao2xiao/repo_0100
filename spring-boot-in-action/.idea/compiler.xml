@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-fast-json" />
         <module name="spring-boot-ftp" />
+        <module name="spring-boot-jpa" />
         <module name="spring-boot-read-write" />
         <module name="spring-boot-redis" />
         <module name="spring-boot-sharding-druid-mybatis" />

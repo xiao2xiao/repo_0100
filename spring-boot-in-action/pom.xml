@@ -20,6 +20,7 @@
         <module>spring-boot-ftp</module>
         <module>spring-boot-sharding-druid-mybatis</module>
         <module>spring-boot-redis</module>
+        <module>spring-boot-jpa</module>
     </modules>
 
 

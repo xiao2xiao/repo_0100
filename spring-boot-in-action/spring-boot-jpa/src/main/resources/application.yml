@@ -1,0 +1,35 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: mysql
+  datasource:
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: feifei123321!
+    url: jdbc:mysql://192.168.254.134:3306/hiber?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    # Hikari 连接池配置
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      # 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      max-lifetime: 30000
+      # 最小空闲连接数量
+      minimum-idle: 5
+      # 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 180000
+      # 连接池最大连接数，默认是10
+      maximum-pool-size: 10
+      # 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      auto-commit: true
+      # 连接池名字
+      pool-name: hikaricp
+      connection-test-query: SELECT 1
+      # 数据库连接超时时间,默认30秒，即30000
+      connection-timeout: 30000
+  output:
+    ansi:
+      enabled: always
