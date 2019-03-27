@@ -2,6 +2,7 @@ package com.neno.repository;
 
 import com.neno.JpaApplicationTests;
 import com.neno.model.User;
+import com.neno.vo.UserVo;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +21,9 @@ public class UserRepositoryTests extends JpaApplicationTests {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private UserVoRepository userVoRepository;
+
     @Test
     public void testSave() {
         User user = new User("bbb", 20, "杭州");
@@ -34,7 +38,8 @@ public class UserRepositoryTests extends JpaApplicationTests {
 
     @Test
     public void testFindAll() {
-
+        List<UserVo> users = userVoRepository.findAll();
+        users.stream().forEach(System.out::println);
     }
 
 }
