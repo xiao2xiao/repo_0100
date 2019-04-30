@@ -1,0 +1,18 @@
+https://blog.csdn.net/shangyuanlang/article/details/81286980
+
+https://www.cnblogs.com/syq816/p/9009777.html
+
+./redis-trib.rb 报错：/usr/local/rvm/gems/ruby-2.4.2/gems/redis-4.0.1/lib/redis/client.rb:119:in `call': ERR Slot 0 is already busy (Redis::CommandError)
+错误提示是
+
+slot插槽被占用了（这是 搭建集群前时，以前redis的旧数据和配置信息没有清理干净。）
+
+解决方案是
+修复卡槽
+src/redis-trib.rb fix 192.168.254.136:7001
+
+用redis-cli 登录到每个节点执行  flushall  和 cluster reset  就可以了。
+
+然后重新执行群集脚本命令：
+
+./redis-trib.rb create --replicas 1 192.168.*.*:7001 192.168.*.*:7002 192.168.*.*:7003 192.168.*.*:7004 192.168.*.*:7005  192.168.*.*:7006
