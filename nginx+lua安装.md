@@ -151,3 +151,45 @@
 	}  
 	
 	cp -r /opt/app/nginx-lua/lualib /opt/app/lua-pro/hello/lualib/
+
+## 4.部署分发层nginx以及基于lua完成基于商品id的定向流量分发 ##
+
+	使用137:80做流量分发nginx，使用137:8000,138:8000做应用层nginx服务器
+
+	cd /opt/app/lua-pro/hello/lualib/resty
+
+	引入lua的http包
+	
+	从下面的网站下载之后，然后上传到上面的目录中
+	https://github.com/ledgetech/lua-resty-http/blob/master/lib/resty/http_headers.lua
+	https://github.com/ledgetech/lua-resty-http/blob/master/lib/resty/http.lua
+
+	流量分发代码
+	
+	local uri_args = ngx.req.get_uri_args()
+	local productId = uri_args["productId"]
+	
+	local hosts = {"192.168.254.137:8000","192.168.254.138:8000"}
+	local hash = ngx.crc32_long(productId)
+	local index  = (hash % 2) + 1
+	local backend = "http://"..hosts[index]
+	
+	local requestPath = uri_args["requestPath"]
+	requestPath = "/"..requestPath.."?productId="..productId
+	
+	local http = require("resty.http")
+	local httpc = http:new()
+	
+	local resp,err = httpc:request_uri(backend, {
+	    method = "GET",
+	    path = requestPath
+	})
+	
+	if not resp then
+	    ngx.say("request error : ", err)
+	    return
+	end
+	
+	ngx.say(resp.body)
+	
+	httpc:close()
