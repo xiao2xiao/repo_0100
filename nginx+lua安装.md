@@ -104,3 +104,50 @@
 下面是应用层的nginx+lua(app-nginx)
 
 和分发层的一样，只不过端口需要改为8000
+
+## 3.工程化的nginx+lua项目结构 ##
+
+	项目工程结构
+	
+	hello
+	    hello.conf     
+	    lua              
+	      hello.lua
+	    lualib            
+	      *.lua
+	      *.so
+	
+	放在/opt/app/lua-pro/hello目录下
+	
+	/opt/app/nginx-lua/nginx/conf/nginx.conf
+	
+	worker_processes  2;  
+	
+	error_log  logs/error.log;  
+	
+	events {  
+	    worker_connections  1024;  
+	}  
+	
+	http {  
+	    include       mime.types;  
+	    default_type  text/html;  
+	  
+	    lua_package_path "/opt/app/lua-pro/hello/lualib/?.lua;;";  
+	    lua_package_cpath "/opt/app/lua-pro/hello/lualib/?.so;;"; 
+	    include /opt/app/lua-pro/hello/hello.conf;  
+	}  
+	
+	/opt/app/lua-pro/hello/hello.conf
+	
+	server {  
+	    listen       80;  
+	    server_name  _;  
+	  
+	    location /hello {  
+	        default_type 'text/html';  
+	        content_by_lua_file /opt/app/lua-pro/hello/lua/hello.lua;  
+	    }  
+	}  
+	
+	cp -r /opt/app/nginx-lua/lualib /opt/app/lua-pro/hello/lualib/
