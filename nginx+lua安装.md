@@ -1,3 +1,4 @@
+## 1.nginx+lua的安装 ##
 
 	## 安装编译依赖 ##
 
@@ -58,3 +59,48 @@
 	测试是否成功
 
 	curl http://192.168.254.137:80/
+
+## 2.nginx+lua开发hello world ##
+
+	vi /opt/app/nginx-lua/nginx/conf/nginx.conf
+	
+	在http部分添加：
+	
+	lua_package_path "/opt/app/nginx-lua/lualib/?.lua;;";  
+	lua_package_cpath "/opt/app/nginx-lua/lualib/?.so;;"; 
+
+	/opt/app/nginx-lua/nginx/conf下，创建一个lua.conf
+	
+	server {  
+	    listen       80;  
+	    server_name  _;  
+	}  
+	
+	在nginx.conf的http部分添加：
+	
+	include lua.conf;
+	
+	验证配置是否正确：
+
+	/opt/app/nginx-lua/nginx/sbin/nginx -t
+
+	在lua.conf的server部分添加：
+	
+	location /lua {  
+	    default_type 'text/html';  
+	    content_by_lua 'ngx.say("hello world")';  
+	} 
+	
+	/opt/app/nginx-lua/nginx/sbin/nginx -t  
+	
+	重新nginx加载配置
+	
+	/opt/app/nginx-lua/nginx/sbin/nginx -s reload  
+	
+	访问http: http://192.168.254.137/lua
+
+这是分发层的nginx+lua
+
+下面是应用层的nginx+lua(app-nginx)
+
+和分发层的一样，只不过端口需要改为8000
