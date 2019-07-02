@@ -227,3 +227,46 @@ centOS 7-minial安装步骤及集群搭建(默认3台)
 	3、访问一下ui界面，8080端口
 
 		http://192.168.254.139:8888/index.html
+
+	5. 安装mysql
+	
+		下载 mysql80-community-release-el7-2.noarch.rpm
+		
+		rpm -ivh mysql80-community-release-el7-2.noarch.rpm
+		
+		通过以下命令，完成对 mysql 数据库的初始化和相关配置
+		
+		mysqld --initialize;
+		chown mysql:mysql /var/lib/mysql -R;
+		systemctl start mysqld.service;
+		systemctl  enable mysqld;
+		
+		通过 cat /var/log/mysqld.log | grep password 命令查看数据库的密码
+		
+		通过 mysql -uroot -p 敲回车键进入数据库登陆界面
+		
+		通过 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'FEIfei123321!'; 命令来修改密码
+		
+		通过 exit; 命令退出 MySQL，然后通过新密码再次登陆
+		
+		# MySQL8.0允许外部访问 #
+		登进MySQL之后，
+		
+		输入以下语句，进入mysql库：    
+			use mysql
+		
+		更新域属性，'%'表示允许外部访问：   
+			update user set host='%' where user ='root';
+		
+		执行以上语句之后再执行：     
+			FLUSH PRIVILEGES;
+		
+		再执行授权语句：    
+			GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'WITH GRANT OPTION;
+			然后外部就可以通过账户密码访问了。
+		
+		其它说明：      
+			FLUSH PRIVILEGES; 命令本质上的作用是：将当前user和privilige表中的用户信息/权限设置从mysql库(MySQL数据库的内置库)中提取到内存里。MySQL用户数据和权限有修改后，希望在"不重启MySQL服务"的情况下直接生效，那么就需要执行这个命令。通常是在修改ROOT帐号的设置后，怕重启后无法再登录进来，那么直接flush之后就可以看权限设置是否生效。而不必冒太大风险。
+		
+		原文：https://blog.csdn.net/h996666/article/details/80921913 
+		https://blog.csdn.net/weixin_42266606/article/details/80879571
