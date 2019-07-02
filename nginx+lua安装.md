@@ -193,3 +193,56 @@
 	ngx.say(resp.body)
 	
 	httpc:close()
+
+## 5.安装twemproxy插件 ##
+
+	为redis主机群配置(在137下)
+	cd /opt/app/twemproxy/
+	
+	wget https://github.com/twitter/twemproxy/archive/master.zip
+	
+	unzip master.zip
+	
+	cd /opt/app/twemproxy/twemproxy-master
+	
+	autoreconf -fvi
+	
+	./configure && make
+	
+	cd /opt/app/twemproxy/twemproxy-master/conf
+	
+	cp nutcracker.yml nutcracker.bak.yml
+	
+	vim nutcracker.yml
+	 
+	alpha:
+	  listen: 192.168.254.137:7011
+	  hash: fnv1a_64
+	  distribution: ketama
+	  auto_eject_hosts: true
+	  redis: true
+	  hash_tag: "::"
+	  server_retry_timeout: 2000
+	  server_failure_limit: 1
+	  servers:
+	   - 192.168.254.137:6380:1 redis-master01
+	   - 192.168.254.137:6381:1 reids-master02
+	
+	cd /opt/app/twemproxy/twemproxy-master/src
+	
+	启动twemproxy   
+	./nutcracker -d -c ../conf/nutcracker.yml
+	
+	ps -ef | grep nutcracker
+	
+	cd /opt/app/redis-4.0.2/
+	
+	启动redis
+	
+	src/redis-cli -h 192.168.254.137 -p 7011
+	
+	使用redis mget优化思路，使用mget可能使相同商品的属性在2个redis主实例上，
+	twemproxy中配置一个东西，hash_tag: "::"
+	那么hash的时候是按照::中间的值进行hash的，因此相同的id肯定路由到同一个主实例上，如下
+	product:1:
+	product_property:1:
