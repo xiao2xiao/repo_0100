@@ -112,10 +112,11 @@ centOS 7-minial安装步骤及集群搭建(默认3台)
 	3、tar -xvzf otp_src_20.2.tar.gz
 	4、进入解压之后的文件
 		./configure --prefix=/opt/app/erlang-20.2/erinstall --with-ssl -enable-threads -enable-smmp-support -enable-kernel-poll  --enable-hipe  --without-javac
-	5、make &&　make install
-	6、在/etc/profile编辑	
-	7、source /etc/profile
-	8、erl
+	5、make
+	6、make install
+	7、在/etc/profile编辑	
+	8、source /etc/profile
+	9、erl
 
 	#5.2.2 安装rabbitmq3.7.6
 	1、wget https://github.com/rabbitmq/rabbitmq-server/releases/download/.7.6/rabbitmq-server-generic-unix-3.7.6.tar.xz
@@ -140,6 +141,8 @@ centOS 7-minial安装步骤及集群搭建(默认3台)
 		firewall-cmd --zone=public --add-port=15672/tcp --permanent
 		firewall-cmd --reload
 		systemctl status firewalld.service
+
+	原文：https://blog.csdn.net/hu19921016/article/details/81094463
 
 	#5.3 zookeeper集群安装
 
@@ -228,7 +231,7 @@ centOS 7-minial安装步骤及集群搭建(默认3台)
 
 		http://192.168.254.139:8888/index.html
 
-	5. 安装mysql
+	## 5.5 安装mysql ##
 	
 		下载 mysql80-community-release-el7-2.noarch.rpm
 		
